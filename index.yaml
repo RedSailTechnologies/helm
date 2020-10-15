@@ -1,0 +1,75 @@
+apiVersion: v1
+entries:
+  boatswain:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-15T11:00:26.549531894-07:00"
+    dependencies:
+    - condition: kraken.enabled
+      name: kraken
+      repository: file://../kraken
+      version: ~0.1.0
+    - condition: poseidon.enabled
+      name: poseidon
+      repository: file://../poseidon
+      version: ~0.1.0
+    - condition: mate.enabled
+      name: mate
+      repository: file://../mate
+      version: ~0.1.0
+    - condition: triton.enabled
+      name: triton
+      repository: file://../triton
+      version: ~0.1.0
+    description: Chart for the boatswain deployment tool.
+    digest: 8c1fcc0f85cd666049530be0b511e12ae34cb7812192962939d3fe1c7b8c0574
+    name: boatswain
+    type: application
+    urls:
+    - charts/boatswain-0.1.0.tgz
+    version: 0.1.0
+  kraken:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-15T11:00:26.549933217-07:00"
+    description: The kraken component chart
+    digest: 81ced991270d9d185b1524f31458f56ad5efe8964de4184d13dbb9f90dab5c42
+    name: kraken
+    type: application
+    urls:
+    - charts/kraken-0.1.0.tgz
+    version: 0.1.0
+  mate:
+  - apiVersion: v2
+    appVersion: "1.16"
+    created: "2020-10-15T11:00:26.550367858-07:00"
+    description: Mate is the gateway/router for boatswain.
+    digest: 5c094811f38dd614cce7fb5cff9c9b98a3ce04541561686f5351329bf5fc4c12
+    name: mate
+    type: application
+    urls:
+    - charts/mate-0.1.0.tgz
+    version: 0.1.0
+  poseidon:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-15T11:00:26.550760232-07:00"
+    description: The poseidon component chart
+    digest: e011a821fdfb3ca545bdb816915416dcab5fa70cd3bb1de19cd6d7eccac8dedd
+    name: poseidon
+    type: application
+    urls:
+    - charts/poseidon-0.1.0.tgz
+    version: 0.1.0
+  triton:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-15T11:00:26.551191295-07:00"
+    description: The triton client chart
+    digest: 7e6e38fbe8b430a8a28e89e76844c4b6fd281b4ffa3e246008ce78fbac981f57
+    name: triton
+    type: application
+    urls:
+    - charts/triton-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-10-15T11:00:26.545910109-07:00"
