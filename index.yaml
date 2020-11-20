@@ -2,8 +2,34 @@ apiVersion: v1
 entries:
   boatswain:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2020-11-20T14:13:44.302981299-08:00"
+    dependencies:
+    - name: kraken
+      repository: file://../kraken
+      version: 0.2.0
+    - name: poseidon
+      repository: file://../poseidon
+      version: 0.2.0
+    - name: mate
+      repository: file://../mate
+      version: 0.2.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.5
+    - name: triton
+      repository: file://../triton
+      version: 0.2.0
+    description: Chart for the boatswain deployment tool.
+    digest: 9469d2bd1db876641a6dee8de274e052effb7effa9297545b4a8ee318953fed0
+    name: boatswain
+    type: application
+    urls:
+    - charts/boatswain-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-10-15T11:15:48.722523301-07:00"
+    created: "2020-11-20T14:13:44.298030072-08:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -30,8 +56,18 @@ entries:
     version: 0.1.0
   kraken:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2020-11-20T14:13:44.303934362-08:00"
+    description: The kraken component chart
+    digest: 33ce4ca6fc23bc9fd69f7b28276e1c014a6dad309fdc50e4139c1686f85292ae
+    name: kraken
+    type: application
+    urls:
+    - charts/kraken-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-10-15T11:15:48.723445883-07:00"
+    created: "2020-11-20T14:13:44.303479546-08:00"
     description: The kraken component chart
     digest: edb5c0855b85caea0b873fe8a1be01ef0e30c9e25b5736d782525e4f59243b88
     name: kraken
@@ -41,8 +77,18 @@ entries:
     version: 0.1.0
   mate:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2020-11-20T14:13:44.304928557-08:00"
+    description: Mate is the gateway/router for boatswain.
+    digest: 40becf84d40603811b118900358cf8bc2460e0d436422e7a4928149ea8dfbdb3
+    name: mate
+    type: application
+    urls:
+    - charts/mate-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: "1.16"
-    created: "2020-10-15T11:15:48.724405483-07:00"
+    created: "2020-11-20T14:13:44.304435778-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: 6d56b6dd1e391daf9ad379e6329a3347615d7591884faf1f39ff6da2cd4cd256
     name: mate
@@ -52,8 +98,18 @@ entries:
     version: 0.1.0
   poseidon:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2020-11-20T14:13:44.30590519-08:00"
+    description: The poseidon component chart
+    digest: b009723c62835f92d50521827da24e255a7b305f4740f11b0de93c1dccd04ab7
+    name: poseidon
+    type: application
+    urls:
+    - charts/poseidon-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-10-15T11:15:48.725090187-07:00"
+    created: "2020-11-20T14:13:44.305406362-08:00"
     description: The poseidon component chart
     digest: 4411706f94662d697c23efebf0d443af1f5ad4cfd163f3e770a5a66bf0b9d9c2
     name: poseidon
@@ -63,8 +119,18 @@ entries:
     version: 0.1.0
   triton:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2020-11-20T14:13:44.306824769-08:00"
+    description: The triton client chart
+    digest: 3c7cdda8f9bffa1265e8c49bd8f7b3a317c29cd6a93a778b5a908abbb26d6abb
+    name: triton
+    type: application
+    urls:
+    - charts/triton-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-10-15T11:15:48.725577637-07:00"
+    created: "2020-11-20T14:13:44.30635941-08:00"
     description: The triton client chart
     digest: e8ace76a0429e6df1a734aa3cb5752d45e0c63803c3a4b1e595d385b6f39722d
     name: triton
@@ -72,4 +138,4 @@ entries:
     urls:
     - charts/triton-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-15T11:15:48.720498725-07:00"
+generated: "2020-11-20T14:13:44.294853462-08:00"
