@@ -2,8 +2,34 @@ apiVersion: v1
 entries:
   boatswain:
   - apiVersion: v2
+    appVersion: 0.3.1
+    created: "2020-12-03T13:26:58.73920045-08:00"
+    dependencies:
+    - name: kraken
+      repository: file://../kraken
+      version: 0.3.1
+    - name: poseidon
+      repository: file://../poseidon
+      version: 0.3.0
+    - name: mate
+      repository: file://../mate
+      version: 0.3.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.5
+    - name: triton
+      repository: file://../triton
+      version: 0.3.0
+    description: Chart for the boatswain deployment tool.
+    digest: c648ff0fb728e0ac7316e422acc0bc7fae77c74347f11a625b7f78075901760d
+    name: boatswain
+    type: application
+    urls:
+    - charts/boatswain-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T12:59:57.182865623-08:00"
+    created: "2020-12-03T13:26:58.734646821-08:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -29,7 +55,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T12:59:57.176758411-08:00"
+    created: "2020-12-03T13:26:58.729204497-08:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -55,7 +81,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T12:59:57.172232575-08:00"
+    created: "2020-12-03T13:26:58.724998503-08:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -82,8 +108,18 @@ entries:
     version: 0.1.0
   kraken:
   - apiVersion: v2
+    appVersion: 0.3.1
+    created: "2020-12-03T13:26:58.740957815-08:00"
+    description: The kraken component chart
+    digest: 18cec35aa33949282288818476ef12c3d3935f1001329e3253f0f0bedf4802c2
+    name: kraken
+    type: application
+    urls:
+    - charts/kraken-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T12:59:57.184131266-08:00"
+    created: "2020-12-03T13:26:58.740365826-08:00"
     description: The kraken component chart
     digest: 7325b21fef01de659e5b8b948b38edbe82f55cd77c52e3306e3fe478df3e2900
     name: kraken
@@ -93,7 +129,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T12:59:57.183751664-08:00"
+    created: "2020-12-03T13:26:58.739988394-08:00"
     description: The kraken component chart
     digest: 33ce4ca6fc23bc9fd69f7b28276e1c014a6dad309fdc50e4139c1686f85292ae
     name: kraken
@@ -103,7 +139,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T12:59:57.18334984-08:00"
+    created: "2020-12-03T13:26:58.73960404-08:00"
     description: The kraken component chart
     digest: edb5c0855b85caea0b873fe8a1be01ef0e30c9e25b5736d782525e4f59243b88
     name: kraken
@@ -114,7 +150,7 @@ entries:
   mate:
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T12:59:57.185549619-08:00"
+    created: "2020-12-03T13:26:58.743160867-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: d4dd1314dcb81d8f7352fb9710c6face4b7e598899309151749c233a145736e1
     name: mate
@@ -124,7 +160,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T12:59:57.185086292-08:00"
+    created: "2020-12-03T13:26:58.742460405-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: 40becf84d40603811b118900358cf8bc2460e0d436422e7a4928149ea8dfbdb3
     name: mate
@@ -134,7 +170,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "1.16"
-    created: "2020-12-03T12:59:57.184560246-08:00"
+    created: "2020-12-03T13:26:58.741728831-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: 6d56b6dd1e391daf9ad379e6329a3347615d7591884faf1f39ff6da2cd4cd256
     name: mate
@@ -145,7 +181,7 @@ entries:
   poseidon:
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T12:59:57.186916825-08:00"
+    created: "2020-12-03T13:26:58.744415685-08:00"
     description: The poseidon component chart
     digest: fa7766b4906e47a88a7d75823c324a602715b3a10530e5679a87c9d7388cd8a0
     name: poseidon
@@ -155,7 +191,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T12:59:57.186435058-08:00"
+    created: "2020-12-03T13:26:58.743997115-08:00"
     description: The poseidon component chart
     digest: b009723c62835f92d50521827da24e255a7b305f4740f11b0de93c1dccd04ab7
     name: poseidon
@@ -165,7 +201,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T12:59:57.185962891-08:00"
+    created: "2020-12-03T13:26:58.743562526-08:00"
     description: The poseidon component chart
     digest: 4411706f94662d697c23efebf0d443af1f5ad4cfd163f3e770a5a66bf0b9d9c2
     name: poseidon
@@ -176,7 +212,7 @@ entries:
   triton:
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T12:59:57.188243057-08:00"
+    created: "2020-12-03T13:26:58.746190375-08:00"
     description: The triton client chart
     digest: f853bd0842d6dca29e53bcba8e5b567f55e467aa9a40001fa0f15c31eef9e411
     name: triton
@@ -186,7 +222,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T12:59:57.187838446-08:00"
+    created: "2020-12-03T13:26:58.745794771-08:00"
     description: The triton client chart
     digest: 3c7cdda8f9bffa1265e8c49bd8f7b3a317c29cd6a93a778b5a908abbb26d6abb
     name: triton
@@ -196,7 +232,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T12:59:57.187420268-08:00"
+    created: "2020-12-03T13:26:58.745166522-08:00"
     description: The triton client chart
     digest: e8ace76a0429e6df1a734aa3cb5752d45e0c63803c3a4b1e595d385b6f39722d
     name: triton
@@ -204,4 +240,4 @@ entries:
     urls:
     - charts/triton-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-03T12:59:57.16980793-08:00"
+generated: "2020-12-03T13:26:58.722615157-08:00"
