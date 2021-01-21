@@ -2,8 +2,37 @@ apiVersion: v1
 entries:
   boatswain:
   - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2021-01-21T11:20:52.632306942-08:00"
+    dependencies:
+    - name: kraken
+      repository: file://../kraken
+      version: 0.4.0
+    - name: gyarados
+      repository: file://../gyarados
+      version: 0.4.0
+    - name: poseidon
+      repository: file://../poseidon
+      version: 0.4.0
+    - name: mate
+      repository: file://../mate
+      version: 0.4.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.5
+    - name: triton
+      repository: file://../triton
+      version: 0.4.0
+    description: Chart for the boatswain deployment tool.
+    digest: 410a76590f754038ad0719c4b6ee2d4a0e6de577fa971526a2193ef315325bb8
+    name: boatswain
+    type: application
+    urls:
+    - charts/boatswain-v0.4.0.tgz
+    version: v0.4.0
+  - apiVersion: v2
     appVersion: 0.3.1
-    created: "2020-12-03T13:26:58.73920045-08:00"
+    created: "2021-01-21T11:20:52.626191305-08:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -29,7 +58,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T13:26:58.734646821-08:00"
+    created: "2021-01-21T11:20:52.621460925-08:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -55,7 +84,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T13:26:58.729204497-08:00"
+    created: "2021-01-21T11:20:52.61654129-08:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -81,7 +110,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T13:26:58.724998503-08:00"
+    created: "2021-01-21T11:20:52.612096766-08:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -106,10 +135,31 @@ entries:
     urls:
     - charts/boatswain-0.1.0.tgz
     version: 0.1.0
+  gyarados:
+  - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2021-01-21T11:20:52.632688187-08:00"
+    description: The gyarados component chart
+    digest: 0db5de6801d2c68a71b3d5e7f439a847a84485003aa3ca5a7ea84e5caaf8a4bc
+    name: gyarados
+    type: application
+    urls:
+    - charts/gyarados-v0.4.0.tgz
+    version: v0.4.0
   kraken:
   - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2021-01-21T11:20:52.635415769-08:00"
+    description: The kraken component chart
+    digest: 2dd9998815809a13f01c57d4b2cd8b1742a3092de24b95f4c2e7aff733684c19
+    name: kraken
+    type: application
+    urls:
+    - charts/kraken-v0.4.0.tgz
+    version: v0.4.0
+  - apiVersion: v2
     appVersion: 0.3.1
-    created: "2020-12-03T13:26:58.740957815-08:00"
+    created: "2021-01-21T11:20:52.635006831-08:00"
     description: The kraken component chart
     digest: 18cec35aa33949282288818476ef12c3d3935f1001329e3253f0f0bedf4802c2
     name: kraken
@@ -119,7 +169,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T13:26:58.740365826-08:00"
+    created: "2021-01-21T11:20:52.634200167-08:00"
     description: The kraken component chart
     digest: 7325b21fef01de659e5b8b948b38edbe82f55cd77c52e3306e3fe478df3e2900
     name: kraken
@@ -129,7 +179,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T13:26:58.739988394-08:00"
+    created: "2021-01-21T11:20:52.633496149-08:00"
     description: The kraken component chart
     digest: 33ce4ca6fc23bc9fd69f7b28276e1c014a6dad309fdc50e4139c1686f85292ae
     name: kraken
@@ -139,7 +189,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T13:26:58.73960404-08:00"
+    created: "2021-01-21T11:20:52.633108483-08:00"
     description: The kraken component chart
     digest: edb5c0855b85caea0b873fe8a1be01ef0e30c9e25b5736d782525e4f59243b88
     name: kraken
@@ -149,8 +199,18 @@ entries:
     version: 0.1.0
   mate:
   - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2021-01-21T11:20:52.637230272-08:00"
+    description: Mate is the gateway/router for boatswain.
+    digest: 70e9742b263f257ce74473c3e570ea0e6f375062452070f268bd5ff2a8954369
+    name: mate
+    type: application
+    urls:
+    - charts/mate-v0.4.0.tgz
+    version: v0.4.0
+  - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T13:26:58.743160867-08:00"
+    created: "2021-01-21T11:20:52.636752454-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: d4dd1314dcb81d8f7352fb9710c6face4b7e598899309151749c233a145736e1
     name: mate
@@ -160,7 +220,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T13:26:58.742460405-08:00"
+    created: "2021-01-21T11:20:52.636302776-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: 40becf84d40603811b118900358cf8bc2460e0d436422e7a4928149ea8dfbdb3
     name: mate
@@ -170,7 +230,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "1.16"
-    created: "2020-12-03T13:26:58.741728831-08:00"
+    created: "2021-01-21T11:20:52.635839887-08:00"
     description: Mate is the gateway/router for boatswain.
     digest: 6d56b6dd1e391daf9ad379e6329a3347615d7591884faf1f39ff6da2cd4cd256
     name: mate
@@ -180,8 +240,18 @@ entries:
     version: 0.1.0
   poseidon:
   - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2021-01-21T11:20:52.639162064-08:00"
+    description: The poseidon component chart
+    digest: 5aab11091285bace4d5f067eb23ec51b36fb7f769572158749f83228e6416c67
+    name: poseidon
+    type: application
+    urls:
+    - charts/poseidon-v0.4.0.tgz
+    version: v0.4.0
+  - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T13:26:58.744415685-08:00"
+    created: "2021-01-21T11:20:52.638678253-08:00"
     description: The poseidon component chart
     digest: fa7766b4906e47a88a7d75823c324a602715b3a10530e5679a87c9d7388cd8a0
     name: poseidon
@@ -191,7 +261,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T13:26:58.743997115-08:00"
+    created: "2021-01-21T11:20:52.638185404-08:00"
     description: The poseidon component chart
     digest: b009723c62835f92d50521827da24e255a7b305f4740f11b0de93c1dccd04ab7
     name: poseidon
@@ -201,7 +271,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T13:26:58.743562526-08:00"
+    created: "2021-01-21T11:20:52.637692304-08:00"
     description: The poseidon component chart
     digest: 4411706f94662d697c23efebf0d443af1f5ad4cfd163f3e770a5a66bf0b9d9c2
     name: poseidon
@@ -211,8 +281,18 @@ entries:
     version: 0.1.0
   triton:
   - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2021-01-21T11:20:52.641173788-08:00"
+    description: The triton client chart
+    digest: 845bb95623814fe79d61a8ca7c39fa497c437f7fb2d0ce4589cbfdfccb861256
+    name: triton
+    type: application
+    urls:
+    - charts/triton-v0.4.0.tgz
+    version: v0.4.0
+  - apiVersion: v2
     appVersion: 0.3.0
-    created: "2020-12-03T13:26:58.746190375-08:00"
+    created: "2021-01-21T11:20:52.640672657-08:00"
     description: The triton client chart
     digest: f853bd0842d6dca29e53bcba8e5b567f55e467aa9a40001fa0f15c31eef9e411
     name: triton
@@ -222,7 +302,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2020-12-03T13:26:58.745794771-08:00"
+    created: "2021-01-21T11:20:52.640160822-08:00"
     description: The triton client chart
     digest: 3c7cdda8f9bffa1265e8c49bd8f7b3a317c29cd6a93a778b5a908abbb26d6abb
     name: triton
@@ -232,7 +312,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-03T13:26:58.745166522-08:00"
+    created: "2021-01-21T11:20:52.639689626-08:00"
     description: The triton client chart
     digest: e8ace76a0429e6df1a734aa3cb5752d45e0c63803c3a4b1e595d385b6f39722d
     name: triton
@@ -240,4 +320,4 @@ entries:
     urls:
     - charts/triton-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-03T13:26:58.722615157-08:00"
+generated: "2021-01-21T11:20:52.608964236-08:00"
