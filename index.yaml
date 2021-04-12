@@ -2,8 +2,43 @@ apiVersion: v1
 entries:
   boatswain:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.498818747-07:00"
+    dependencies:
+    - condition: kraken.enabled
+      name: kraken
+      repository: file://../kraken
+      version: 0.8.11
+    - condition: gyarados.enabled
+      name: gyarados
+      repository: file://../gyarados
+      version: 0.8.11
+    - condition: poseidon.enabled
+      name: poseidon
+      repository: file://../poseidon
+      version: 0.8.11
+    - condition: mate.enabled
+      name: mate
+      repository: file://../mate
+      version: 0.8.11
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.5
+    - condition: triton.enabled
+      name: triton
+      repository: file://../triton
+      version: 0.8.11
+    description: Chart for the boatswain deployment tool.
+    digest: 64e12be8fc5ef682755f097bcfcd4b878efbc9000354eb4c1f0c05ac3b804cad
+    name: boatswain
+    type: application
+    urls:
+    - charts/boatswain-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.765124516-07:00"
+    created: "2021-04-12T13:48:54.493289813-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -38,7 +73,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.81021269-07:00"
+    created: "2021-04-12T13:48:54.544689508-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -73,7 +108,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.805412386-07:00"
+    created: "2021-04-12T13:48:54.5387572-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -108,7 +143,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.799043216-07:00"
+    created: "2021-04-12T13:48:54.533594633-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -143,7 +178,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.794007965-07:00"
+    created: "2021-04-12T13:48:54.527152163-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -178,7 +213,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.788207857-07:00"
+    created: "2021-04-12T13:48:54.522138746-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -213,7 +248,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.78156174-07:00"
+    created: "2021-04-12T13:48:54.516931231-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -248,7 +283,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.77687855-07:00"
+    created: "2021-04-12T13:48:54.510018805-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -283,7 +318,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.769749194-07:00"
+    created: "2021-04-12T13:48:54.504044527-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -312,7 +347,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.760006237-07:00"
+    created: "2021-04-12T13:48:54.487717303-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -341,7 +376,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.755451455-07:00"
+    created: "2021-04-12T13:48:54.482982628-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -370,7 +405,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.835084875-07:00"
+    created: "2021-04-12T13:48:54.5717176-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -399,7 +434,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.830640404-07:00"
+    created: "2021-04-12T13:48:54.566791293-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -428,7 +463,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-03-23T09:13:11.750332956-07:00"
+    created: "2021-04-12T13:48:54.475741405-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -457,7 +492,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.4.2
-    created: "2021-03-23T09:13:11.825355601-07:00"
+    created: "2021-04-12T13:48:54.561006672-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -486,7 +521,7 @@ entries:
     version: v0.4.2
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2021-03-23T09:13:11.820648997-07:00"
+    created: "2021-04-12T13:48:54.555696812-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -515,7 +550,7 @@ entries:
     version: v0.4.1
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-03-23T09:13:11.81563319-07:00"
+    created: "2021-04-12T13:48:54.550212994-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -544,7 +579,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: 0.3.1
-    created: "2021-03-23T09:13:11.745767796-07:00"
+    created: "2021-04-12T13:48:54.4711595-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -570,7 +605,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2021-03-23T09:13:11.741521891-07:00"
+    created: "2021-04-12T13:48:54.466765926-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -596,7 +631,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-03-23T09:13:11.735520776-07:00"
+    created: "2021-04-12T13:48:54.461202834-07:00"
     dependencies:
     - name: kraken
       repository: file://../kraken
@@ -622,7 +657,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-03-23T09:13:11.730656711-07:00"
+    created: "2021-04-12T13:48:54.456568832-07:00"
     dependencies:
     - condition: kraken.enabled
       name: kraken
@@ -649,8 +684,18 @@ entries:
     version: 0.1.0
   gyarados:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.574416077-07:00"
+    description: The gyarados component chart
+    digest: 5c3e32d171a00c6b2329244c6fdcaa46bb4ff4d8475eabad97d95d48c3130f02
+    name: gyarados
+    type: application
+    urls:
+    - charts/gyarados-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.836675047-07:00"
+    created: "2021-04-12T13:48:54.574044319-07:00"
     description: The gyarados component chart
     digest: 5ec4b2f039ae49462c4e2f62d85c43cb04d231ac41c8c9d5eb551ea26d0eeb5b
     name: gyarados
@@ -660,7 +705,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.841001322-07:00"
+    created: "2021-04-12T13:48:54.577905765-07:00"
     description: The gyarados component chart
     digest: ff9a47f44b60df64e0dd9dd4cacf72e8d55b4bf67dc95e972cdb169a4c43723d
     name: gyarados
@@ -670,7 +715,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.840529745-07:00"
+    created: "2021-04-12T13:48:54.577405923-07:00"
     description: The gyarados component chart
     digest: de47a1c6efa0079ae493db6ca3dbbb34a4c68b2f0ee77ca87968df3209a85801
     name: gyarados
@@ -680,7 +725,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.839802919-07:00"
+    created: "2021-04-12T13:48:54.576904016-07:00"
     description: The gyarados component chart
     digest: 4c1bcf6d04a4871809c800164d9ef260395f8aa938408647c7cbc23591301e6d
     name: gyarados
@@ -690,7 +735,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.839158677-07:00"
+    created: "2021-04-12T13:48:54.576389721-07:00"
     description: The gyarados component chart
     digest: 85fffda658092632a76bb08409206fa78b37230603036af64e0d5ad4d74cfb5d
     name: gyarados
@@ -700,7 +745,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.838423872-07:00"
+    created: "2021-04-12T13:48:54.575911724-07:00"
     description: The gyarados component chart
     digest: 5aa8dab3376cbc75c483317a7142d3fdc9abea0508faeab6bce2cba88d910bd8
     name: gyarados
@@ -710,7 +755,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.838049743-07:00"
+    created: "2021-04-12T13:48:54.575551974-07:00"
     description: The gyarados component chart
     digest: ec446f161d8fce34ad1d1db64e84fd0a07b930651a09fe693098abcb9561089d
     name: gyarados
@@ -720,7 +765,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.837668316-07:00"
+    created: "2021-04-12T13:48:54.575160623-07:00"
     description: The gyarados component chart
     digest: 2e3d13037f058f4b2cbed075eb670a47b7a563dd9d35c93477a6bf0ad04900a6
     name: gyarados
@@ -730,7 +775,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.837235628-07:00"
+    created: "2021-04-12T13:48:54.574782749-07:00"
     description: The gyarados component chart
     digest: a12122398ba7ea78430ed883849be6c8dac0108a48b58bd0ae1c6f04f0058368
     name: gyarados
@@ -740,7 +785,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.836302176-07:00"
+    created: "2021-04-12T13:48:54.573684143-07:00"
     description: The gyarados component chart
     digest: 9d3a31af5a67eecb0a24ea67cf7803d8279c7b8ac8ccf781f2573589fedf974e
     name: gyarados
@@ -750,7 +795,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.835886642-07:00"
+    created: "2021-04-12T13:48:54.573241813-07:00"
     description: The gyarados component chart
     digest: 53cb25f1aba8a93b186ef8edc7dafd311bb27442c44b2f86401ec4c3d7639f0d
     name: gyarados
@@ -760,7 +805,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.843018752-07:00"
+    created: "2021-04-12T13:48:54.5807299-07:00"
     description: The gyarados component chart
     digest: 3b8323a919936309bc99ae4081d8001880bfb3e1c265a26d50841145e35f4836
     name: gyarados
@@ -770,7 +815,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.842656689-07:00"
+    created: "2021-04-12T13:48:54.580018915-07:00"
     description: The gyarados component chart
     digest: 5919237ce74f55773a18566ff314f1d3730568ccd9da402b281dc5a073ae8e85
     name: gyarados
@@ -780,7 +825,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-03-23T09:13:11.835507735-07:00"
+    created: "2021-04-12T13:48:54.572509986-07:00"
     description: The gyarados component chart
     digest: 918715d052931ded511e1896471c98d79440b4e0c6463941a396cdebd96ace37
     name: gyarados
@@ -790,7 +835,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.4.2
-    created: "2021-03-23T09:13:11.84222693-07:00"
+    created: "2021-04-12T13:48:54.579425761-07:00"
     description: The gyarados component chart
     digest: 9a6e66d177052a077062b6fbb5ca8f2ea5aaa6845b2a46f39d9e5d39e53a79da
     name: gyarados
@@ -800,7 +845,7 @@ entries:
     version: v0.4.2
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2021-03-23T09:13:11.841841147-07:00"
+    created: "2021-04-12T13:48:54.578912066-07:00"
     description: The gyarados component chart
     digest: 88e307c0e8860d7e654686f7f7955a7375a6356de93d4b182b9b43dd45dfe434
     name: gyarados
@@ -810,7 +855,7 @@ entries:
     version: v0.4.1
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-03-23T09:13:11.841471529-07:00"
+    created: "2021-04-12T13:48:54.578405184-07:00"
     description: The gyarados component chart
     digest: 0db5de6801d2c68a71b3d5e7f439a847a84485003aa3ca5a7ea84e5caaf8a4bc
     name: gyarados
@@ -820,8 +865,18 @@ entries:
     version: v0.4.0
   kraken:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.587680016-07:00"
+    description: The kraken component chart
+    digest: d8b070a33a97e0d7bdae543d21efdde422e840e5d9e0f8b045c4a4e5149b3f60
+    name: kraken
+    type: application
+    urls:
+    - charts/kraken-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.846233767-07:00"
+    created: "2021-04-12T13:48:54.587274511-07:00"
     description: The kraken component chart
     digest: 7e7eb92f9da24d07eabfe8a0e1d6602a8d907d063e842c63d69ee1feaa8015b7
     name: kraken
@@ -831,7 +886,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.850033962-07:00"
+    created: "2021-04-12T13:48:54.5917688-07:00"
     description: The kraken component chart
     digest: e01b26a0646017d51f923588af70c19ca52e120fd15b29700ac52d121a43e39c
     name: kraken
@@ -841,7 +896,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.849288208-07:00"
+    created: "2021-04-12T13:48:54.591308848-07:00"
     description: The kraken component chart
     digest: fb8a3c90012f69dff288bcc6a82d04615e9c47832774ba17e520b84c60cedddb
     name: kraken
@@ -851,7 +906,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.848578126-07:00"
+    created: "2021-04-12T13:48:54.590853714-07:00"
     description: The kraken component chart
     digest: ec9e1d6fd62d9626cc07164d5ad6399c5bcda7a0a3ce398df19f6f16bef18b0c
     name: kraken
@@ -861,7 +916,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.848202017-07:00"
+    created: "2021-04-12T13:48:54.590397292-07:00"
     description: The kraken component chart
     digest: b816e04131a70416cf0c23859f731b455e2a4d5d985fb13a966f4ff18e75543f
     name: kraken
@@ -871,7 +926,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.847803138-07:00"
+    created: "2021-04-12T13:48:54.589922501-07:00"
     description: The kraken component chart
     digest: cd6d81b1c6101d0e4a19f7a7900fd49af2fea9da6e658e2420e893b4aac9ee08
     name: kraken
@@ -881,7 +936,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.847439746-07:00"
+    created: "2021-04-12T13:48:54.589467857-07:00"
     description: The kraken component chart
     digest: 145ee5e3d9d4cf479c14e60be2c646059bf7a2d2ecec401b9b28a3997e367c8e
     name: kraken
@@ -891,7 +946,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.84701431-07:00"
+    created: "2021-04-12T13:48:54.589008423-07:00"
     description: The kraken component chart
     digest: 4340f5c2aee0f8c9f2abd3eb9a2adf5996d3ca4a1145e1e16c9ba2fd5b06b71f
     name: kraken
@@ -901,7 +956,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.846613338-07:00"
+    created: "2021-04-12T13:48:54.588538689-07:00"
     description: The kraken component chart
     digest: 553f864d9ae57a2110f88db4d33571e8673422ed42754e2ca9ec0f3e41c214c1
     name: kraken
@@ -911,7 +966,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.845863611-07:00"
+    created: "2021-04-12T13:48:54.586893113-07:00"
     description: The kraken component chart
     digest: a3ae2fde819ff9dd86fbe0476e2219fa580819ce32317ae86c0d221b84661572
     name: kraken
@@ -921,7 +976,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.845459348-07:00"
+    created: "2021-04-12T13:48:54.586495855-07:00"
     description: The kraken component chart
     digest: 5bdcf1f825797be5afe62e0ebc6ef83dd330494054fea3a75341fa6c360785b9
     name: kraken
@@ -931,7 +986,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.85209764-07:00"
+    created: "2021-04-12T13:48:54.594087468-07:00"
     description: The kraken component chart
     digest: 70c4fb69aa33fdf5a7f8f5396305c93bc0797a68637d6650c788a5205e714645
     name: kraken
@@ -941,7 +996,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.851488084-07:00"
+    created: "2021-04-12T13:48:54.593621328-07:00"
     description: The kraken component chart
     digest: f07613b508e5d98051fff9608562deba75575af5ee596927b59b3d322fa4675b
     name: kraken
@@ -951,7 +1006,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-03-23T09:13:11.845041352-07:00"
+    created: "2021-04-12T13:48:54.586105828-07:00"
     description: The kraken component chart
     digest: 26570610e68fc2213b46b97ce60c79e0924c6d58bbc002bf3a5ecd099ac6e2c8
     name: kraken
@@ -961,7 +1016,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.4.2
-    created: "2021-03-23T09:13:11.851132546-07:00"
+    created: "2021-04-12T13:48:54.593165183-07:00"
     description: The kraken component chart
     digest: 8b120ed12f9c2e00c48657fd757f46af49c9127b8dbc5cf9049dde6ed33ecaed
     name: kraken
@@ -971,7 +1026,7 @@ entries:
     version: v0.4.2
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2021-03-23T09:13:11.850764758-07:00"
+    created: "2021-04-12T13:48:54.5927074-07:00"
     description: The kraken component chart
     digest: 4e6337562e57976decf9d5041ae8bea30be482a2a89b041c3b31d3c2ba25e86c
     name: kraken
@@ -981,7 +1036,7 @@ entries:
     version: v0.4.1
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-03-23T09:13:11.850403389-07:00"
+    created: "2021-04-12T13:48:54.592251079-07:00"
     description: The kraken component chart
     digest: 2dd9998815809a13f01c57d4b2cd8b1742a3092de24b95f4c2e7aff733684c19
     name: kraken
@@ -991,7 +1046,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: 0.3.1
-    created: "2021-03-23T09:13:11.84466495-07:00"
+    created: "2021-04-12T13:48:54.585689348-07:00"
     description: The kraken component chart
     digest: 18cec35aa33949282288818476ef12c3d3935f1001329e3253f0f0bedf4802c2
     name: kraken
@@ -1001,7 +1056,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2021-03-23T09:13:11.844284507-07:00"
+    created: "2021-04-12T13:48:54.582048628-07:00"
     description: The kraken component chart
     digest: 7325b21fef01de659e5b8b948b38edbe82f55cd77c52e3306e3fe478df3e2900
     name: kraken
@@ -1011,7 +1066,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-03-23T09:13:11.843831423-07:00"
+    created: "2021-04-12T13:48:54.581612881-07:00"
     description: The kraken component chart
     digest: 33ce4ca6fc23bc9fd69f7b28276e1c014a6dad309fdc50e4139c1686f85292ae
     name: kraken
@@ -1021,7 +1076,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-03-23T09:13:11.843411112-07:00"
+    created: "2021-04-12T13:48:54.581167074-07:00"
     description: The kraken component chart
     digest: edb5c0855b85caea0b873fe8a1be01ef0e30c9e25b5736d782525e4f59243b88
     name: kraken
@@ -1031,8 +1086,18 @@ entries:
     version: 0.1.0
   mate:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.599725244-07:00"
+    description: Mate is the gateway/router for boatswain.
+    digest: fc4b668ef22205cdba1505b1d3ffca9d9d5ba1cef8a8b37893a358c8f3f120a2
+    name: mate
+    type: application
+    urls:
+    - charts/mate-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.855422599-07:00"
+    created: "2021-04-12T13:48:54.599209219-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: c46572db1d5ea686c9649e13db5091054aae5c05bb1188d51c81fed2c30f7568
     name: mate
@@ -1042,7 +1107,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.859283839-07:00"
+    created: "2021-04-12T13:48:54.603475501-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 638d66bc95958ee555584597d2dd658c19b6c8fcdf0d7781dc3da0efa9637652
     name: mate
@@ -1052,7 +1117,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.858460934-07:00"
+    created: "2021-04-12T13:48:54.603029983-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 6f41cd17a24cac02162542d9547d34c496997e04226e203b46c028c528d86f0d
     name: mate
@@ -1062,7 +1127,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.858004614-07:00"
+    created: "2021-04-12T13:48:54.602565718-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: a43bc3bc31de14e948db6db32a5ffd10ea9ffb52839a13d905b343751f0574a2
     name: mate
@@ -1072,7 +1137,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.857595732-07:00"
+    created: "2021-04-12T13:48:54.602120557-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: aec51c0840ff547d585e4b03b16feb62c0ce3e58bbfb10652b60c593a7753bca
     name: mate
@@ -1082,7 +1147,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.857101353-07:00"
+    created: "2021-04-12T13:48:54.601666821-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 9b3cdcce0013c130f2080abe55b3a68870a63c774def482f893417fd06ba007c
     name: mate
@@ -1092,7 +1157,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.856700595-07:00"
+    created: "2021-04-12T13:48:54.601155622-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: ab71681fc735218cf6bc152f00226562a9b85ed4b8d8300ce5da9cf9c95847dc
     name: mate
@@ -1102,7 +1167,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.856284142-07:00"
+    created: "2021-04-12T13:48:54.60073572-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: ad33b21b0666d2a376ada3f5329be09b1fe78c73132774403b01ecb31fcd569b
     name: mate
@@ -1112,7 +1177,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.855824602-07:00"
+    created: "2021-04-12T13:48:54.60026131-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 28a91691754c88225a648c495919ecf4d51b0a0744a75ab43a0c19d294bbf64f
     name: mate
@@ -1122,7 +1187,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.854994961-07:00"
+    created: "2021-04-12T13:48:54.598684265-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 87c248acf9c1d71d28159131804951199e2b0cec431c54956c985a2b1808fc49
     name: mate
@@ -1132,7 +1197,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.854589431-07:00"
+    created: "2021-04-12T13:48:54.598153609-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 4adfb1a454158825e546901f9115703ee79a47f87794339f29848e0004f30b8e
     name: mate
@@ -1142,7 +1207,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.861567827-07:00"
+    created: "2021-04-12T13:48:54.606834772-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 6c444273b92c1b070b432bafc23482b15122b6c1630cb18de9d98d2e95a4e268
     name: mate
@@ -1152,7 +1217,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.861107062-07:00"
+    created: "2021-04-12T13:48:54.606378539-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 70ec1a7b82931445ef8854845151f1be4bb12247b4a72dda39419e1fce4d536c
     name: mate
@@ -1162,7 +1227,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-03-23T09:13:11.854176198-07:00"
+    created: "2021-04-12T13:48:54.597643558-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: f0d3758ed5b8e9cbd94e7f55986f8a8a826b016b9af5e1a8c417ca285d846605
     name: mate
@@ -1172,7 +1237,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.4.2
-    created: "2021-03-23T09:13:11.860693608-07:00"
+    created: "2021-04-12T13:48:54.605518387-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 5a314b4077b29aeb2a67e79a5702802de869ed5289eedaf2a3fbbf2b91165acd
     name: mate
@@ -1182,7 +1247,7 @@ entries:
     version: v0.4.2
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2021-03-23T09:13:11.860278907-07:00"
+    created: "2021-04-12T13:48:54.604369213-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: f8495ac57cdd76702c25a2b6358bf8534550911a2e1f3c69bce3dfea2c7a356f
     name: mate
@@ -1192,7 +1257,7 @@ entries:
     version: v0.4.1
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-03-23T09:13:11.859852164-07:00"
+    created: "2021-04-12T13:48:54.603906201-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 70e9742b263f257ce74473c3e570ea0e6f375062452070f268bd5ff2a8954369
     name: mate
@@ -1202,7 +1267,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2021-03-23T09:13:11.853735349-07:00"
+    created: "2021-04-12T13:48:54.597125192-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: d4dd1314dcb81d8f7352fb9710c6face4b7e598899309151749c233a145736e1
     name: mate
@@ -1212,7 +1277,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-03-23T09:13:11.853254912-07:00"
+    created: "2021-04-12T13:48:54.596609152-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 40becf84d40603811b118900358cf8bc2460e0d436422e7a4928149ea8dfbdb3
     name: mate
@@ -1222,7 +1287,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "1.16"
-    created: "2021-03-23T09:13:11.85266436-07:00"
+    created: "2021-04-12T13:48:54.596040168-07:00"
     description: Mate is the gateway/router for boatswain.
     digest: 6d56b6dd1e391daf9ad379e6329a3347615d7591884faf1f39ff6da2cd4cd256
     name: mate
@@ -1232,8 +1297,18 @@ entries:
     version: 0.1.0
   poseidon:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.610204282-07:00"
+    description: The poseidon component chart
+    digest: c21ddab03d6e62b9da1f9e57ad6c136424671566a7c1929a61c7688496d0b915
+    name: poseidon
+    type: application
+    urls:
+    - charts/poseidon-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.864225123-07:00"
+    created: "2021-04-12T13:48:54.60963493-07:00"
     description: The poseidon component chart
     digest: 8e72b4bd14b993e4a68b53b82b533e7b054770bfa6e5f4b4a5a8bebb216d60ba
     name: poseidon
@@ -1243,7 +1318,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.867256176-07:00"
+    created: "2021-04-12T13:48:54.613503076-07:00"
     description: The poseidon component chart
     digest: 89f3cb4fcc028924412cc791b4b1f2b1eab1a2e42f3b52fb8fb1d49e4f1b7b9c
     name: poseidon
@@ -1253,7 +1328,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.8668349-07:00"
+    created: "2021-04-12T13:48:54.61307201-07:00"
     description: The poseidon component chart
     digest: 0180e161cfbd5afc962d644e6abbc8d3b0e30deb84f8b3483be6f05e47119a83
     name: poseidon
@@ -1263,7 +1338,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.866473651-07:00"
+    created: "2021-04-12T13:48:54.612697528-07:00"
     description: The poseidon component chart
     digest: 43ee5bf45ad353e2386ce2982bcd2ba0298dcdf92ea0546779c383126ba0b553
     name: poseidon
@@ -1273,7 +1348,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.866114479-07:00"
+    created: "2021-04-12T13:48:54.612298137-07:00"
     description: The poseidon component chart
     digest: 467f84289b08fbb7e3ed12f2b4e889d5e3e98a21cd94cd4f0f58a3cfa2043d54
     name: poseidon
@@ -1283,7 +1358,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.865721327-07:00"
+    created: "2021-04-12T13:48:54.611840417-07:00"
     description: The poseidon component chart
     digest: 9d93eba673384370198e72dc04e1e7606634bee28daa43933fd89e260f643405
     name: poseidon
@@ -1293,7 +1368,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.86531272-07:00"
+    created: "2021-04-12T13:48:54.611414287-07:00"
     description: The poseidon component chart
     digest: ccba122da843105fe4c40eae87e7729394c906c8068d7dbe4dc7ec4c3bf55eaa
     name: poseidon
@@ -1303,7 +1378,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.86494505-07:00"
+    created: "2021-04-12T13:48:54.610964704-07:00"
     description: The poseidon component chart
     digest: 5b2319bea038784ad2a2264bcb134b854078155a62f71126cd8d91f8dee9793b
     name: poseidon
@@ -1313,7 +1388,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.864585174-07:00"
+    created: "2021-04-12T13:48:54.610588385-07:00"
     description: The poseidon component chart
     digest: 2d4ddfd0cbbc51dbf1e72e4357d22eed14f804c31ec12f8912895200423174e4
     name: poseidon
@@ -1323,7 +1398,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.8638564-07:00"
+    created: "2021-04-12T13:48:54.60920134-07:00"
     description: The poseidon component chart
     digest: b22769a319086ec3f15f2a423cbcc65328fa92fe60eb7b8822588eef210212e0
     name: poseidon
@@ -1333,7 +1408,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.863492423-07:00"
+    created: "2021-04-12T13:48:54.608828961-07:00"
     description: The poseidon component chart
     digest: ff931372055b75f96bf4414ef777b4d9bd6004b53a0eb3f86acfda50a1bc0341
     name: poseidon
@@ -1343,7 +1418,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.869833626-07:00"
+    created: "2021-04-12T13:48:54.616104509-07:00"
     description: The poseidon component chart
     digest: 859c946d03fe85d3282d09c6aae37793c637a07074d0f1f90f4f7da231b15298
     name: poseidon
@@ -1353,7 +1428,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.869472538-07:00"
+    created: "2021-04-12T13:48:54.615495988-07:00"
     description: The poseidon component chart
     digest: cece9000259eddc58e4fd5f4ad5dbd9390a865ce99b3d16bb2772d99f8cea112
     name: poseidon
@@ -1363,7 +1438,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-03-23T09:13:11.863109564-07:00"
+    created: "2021-04-12T13:48:54.608450833-07:00"
     description: The poseidon component chart
     digest: 1fff2fda338403abae73228e53fccb97e7fda2e8380a54ef7476b762e9e66545
     name: poseidon
@@ -1373,7 +1448,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.4.2
-    created: "2021-03-23T09:13:11.86902398-07:00"
+    created: "2021-04-12T13:48:54.614919049-07:00"
     description: The poseidon component chart
     digest: d33c338a18fcf6627e1d41c88411735bf2c28a617fe6d722924be3a950864946
     name: poseidon
@@ -1383,7 +1458,7 @@ entries:
     version: v0.4.2
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2021-03-23T09:13:11.868640978-07:00"
+    created: "2021-04-12T13:48:54.614341588-07:00"
     description: The poseidon component chart
     digest: 9a009e43be3fd1a6875f729b4c06a302ed60c847d938d799a361ef15dcfec3c1
     name: poseidon
@@ -1393,7 +1468,7 @@ entries:
     version: v0.4.1
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-03-23T09:13:11.867975625-07:00"
+    created: "2021-04-12T13:48:54.613927161-07:00"
     description: The poseidon component chart
     digest: 5aab11091285bace4d5f067eb23ec51b36fb7f769572158749f83228e6416c67
     name: poseidon
@@ -1403,7 +1478,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2021-03-23T09:13:11.862742592-07:00"
+    created: "2021-04-12T13:48:54.608020225-07:00"
     description: The poseidon component chart
     digest: fa7766b4906e47a88a7d75823c324a602715b3a10530e5679a87c9d7388cd8a0
     name: poseidon
@@ -1413,7 +1488,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-03-23T09:13:11.862328803-07:00"
+    created: "2021-04-12T13:48:54.607629664-07:00"
     description: The poseidon component chart
     digest: b009723c62835f92d50521827da24e255a7b305f4740f11b0de93c1dccd04ab7
     name: poseidon
@@ -1423,7 +1498,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-03-23T09:13:11.861942092-07:00"
+    created: "2021-04-12T13:48:54.607247773-07:00"
     description: The poseidon component chart
     digest: 4411706f94662d697c23efebf0d443af1f5ad4cfd163f3e770a5a66bf0b9d9c2
     name: poseidon
@@ -1433,8 +1508,18 @@ entries:
     version: 0.1.0
   tentacle:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.617321894-07:00"
+    description: The tentacle component chart
+    digest: d72eb79d0cd15980d36adef5fe359d00674f4c3dd85ba17550ae384c48376471
+    name: tentacle
+    type: application
+    urls:
+    - charts/tentacle-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.870683307-07:00"
+    created: "2021-04-12T13:48:54.617027468-07:00"
     description: The tentacle component chart
     digest: e0daa27fa39f75fec6db760ac4698975505dd1c0d8696054573e59768e9fb9da
     name: tentacle
@@ -1444,7 +1529,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.872893298-07:00"
+    created: "2021-04-12T13:48:54.619542293-07:00"
     description: The tentacle component chart
     digest: bd46e1105d24bea86856d1d24175a43f10adbab39ab87ca078fd1d0971a4e114
     name: tentacle
@@ -1454,7 +1539,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.872620501-07:00"
+    created: "2021-04-12T13:48:54.619266825-07:00"
     description: The tentacle component chart
     digest: e91c8c0d73b5fbe03c64fb8bf40ab1fcc70c47662e43014b1a77cc3ae403ec72
     name: tentacle
@@ -1464,7 +1549,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.872314825-07:00"
+    created: "2021-04-12T13:48:54.619007392-07:00"
     description: The tentacle component chart
     digest: 48dfb83e908131e979394a6984d9e5d994324e09d68c45c2f20f9755c955b2b3
     name: tentacle
@@ -1474,7 +1559,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.872012868-07:00"
+    created: "2021-04-12T13:48:54.618718473-07:00"
     description: The tentacle component chart
     digest: 2a7ed081e4e264b58f22480b5f94307dad467f725a9ac60b58106daa7e4c77ff
     name: tentacle
@@ -1484,7 +1569,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.871759692-07:00"
+    created: "2021-04-12T13:48:54.618448488-07:00"
     description: The tentacle component chart
     digest: c268543823cbee168f89dc5174b5c4fa347121c6f7f6e894479edbaf56aaa78e
     name: tentacle
@@ -1494,7 +1579,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.871460362-07:00"
+    created: "2021-04-12T13:48:54.61818357-07:00"
     description: The tentacle component chart
     digest: 398f663209a89bec849f5806b9158c97fe8dba07d5bba811ec69359f96636160
     name: tentacle
@@ -1504,7 +1589,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.871192241-07:00"
+    created: "2021-04-12T13:48:54.617916926-07:00"
     description: The tentacle component chart
     digest: 98b38e58dbabcf4fdf702644623fa2978e3a51e11aa0d65b3c19b6ce9b49ee4e
     name: tentacle
@@ -1514,7 +1599,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.870936841-07:00"
+    created: "2021-04-12T13:48:54.617585003-07:00"
     description: The tentacle component chart
     digest: 327bc0819a8d0ed6331c59a54a10d0d82ef10795f27eaad75669585a388ab09b
     name: tentacle
@@ -1524,7 +1609,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.870398594-07:00"
+    created: "2021-04-12T13:48:54.616755419-07:00"
     description: The tentacle component chart
     digest: d2b1f8bcb5cf3c943fdccaa5898e23c7b4e2ee91a0456fe288d768307152a0d4
     name: tentacle
@@ -1534,7 +1619,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.870141926-07:00"
+    created: "2021-04-12T13:48:54.616488984-07:00"
     description: The tentacle component chart
     digest: 3d84d8ae6fde99d4eb37c4d21e924a762536e7bf765c720622dc9f38ab8ba505
     name: tentacle
@@ -1544,7 +1629,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.873470178-07:00"
+    created: "2021-04-12T13:48:54.620125358-07:00"
     description: The tentacle component chart
     digest: 2403543880e1783399e1adc4677f74274d2c7ea83f37fe4745cf9eb343cb763a
     name: tentacle
@@ -1554,7 +1639,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.873172555-07:00"
+    created: "2021-04-12T13:48:54.61984358-07:00"
     description: The tentacle component chart
     digest: 8fbe66155cdb1c40703b8bd816a23e4082fd7772bc656c2f5cd6d9944b7c12d8
     name: tentacle
@@ -1564,8 +1649,18 @@ entries:
     version: v0.6.0
   triton:
   - apiVersion: v2
+    appVersion: 0.8.11
+    created: "2021-04-12T13:48:54.623341169-07:00"
+    description: The triton client chart
+    digest: 98e7ca5699497e532560f55be47c6fd1fdb789048ff2d85e88749b92ead98220
+    name: triton
+    type: application
+    urls:
+    - charts/triton-0.8.11.tgz
+    version: 0.8.11
+  - apiVersion: v2
     appVersion: 0.8.10
-    created: "2021-03-23T09:13:11.877327172-07:00"
+    created: "2021-04-12T13:48:54.622930727-07:00"
     description: The triton client chart
     digest: 3dd279d68f456ceee7be7fdbb269ddca918a3f55e04eac52e247eb4d5de0d05d
     name: triton
@@ -1575,7 +1670,7 @@ entries:
     version: 0.8.10
   - apiVersion: v2
     appVersion: 0.8.9
-    created: "2021-03-23T09:13:11.882390338-07:00"
+    created: "2021-04-12T13:48:54.627164324-07:00"
     description: The triton client chart
     digest: 1a4c0e4b8ada3ed1548bf5e55265f1c76fcb8687b4df7d5aa5a751a525e2c8a0
     name: triton
@@ -1585,7 +1680,7 @@ entries:
     version: 0.8.9
   - apiVersion: v2
     appVersion: 0.8.8
-    created: "2021-03-23T09:13:11.881871131-07:00"
+    created: "2021-04-12T13:48:54.626782177-07:00"
     description: The triton client chart
     digest: 46cbbec43e3d059dd20e698258481ec7301983a84d81cd436078a4e560e782d7
     name: triton
@@ -1595,7 +1690,7 @@ entries:
     version: 0.8.8
   - apiVersion: v2
     appVersion: 0.8.7
-    created: "2021-03-23T09:13:11.881323405-07:00"
+    created: "2021-04-12T13:48:54.626395333-07:00"
     description: The triton client chart
     digest: 78432f715a72c3f13d24a3ed7d8ee4497e73928cdb899cbe937c68db805e51ed
     name: triton
@@ -1605,7 +1700,7 @@ entries:
     version: 0.8.7
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2021-03-23T09:13:11.880733731-07:00"
+    created: "2021-04-12T13:48:54.626017326-07:00"
     description: The triton client chart
     digest: 72609328dc83fbda690877595d8437a6b7115ef8e20b8d66587ed687f1770cd1
     name: triton
@@ -1615,7 +1710,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: 0.8.5
-    created: "2021-03-23T09:13:11.880131141-07:00"
+    created: "2021-04-12T13:48:54.625612096-07:00"
     description: The triton client chart
     digest: dbf8facb039d7133634cd6850afc09f94b21f0f69eab5620995532490ae73ce4
     name: triton
@@ -1625,7 +1720,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: 0.8.4
-    created: "2021-03-23T09:13:11.879547489-07:00"
+    created: "2021-04-12T13:48:54.624931467-07:00"
     description: The triton client chart
     digest: 8139ffc39ddcd520a7913a51b24c1ed4458e06bf21f67abe0365bf900accc968
     name: triton
@@ -1635,7 +1730,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: 0.8.3
-    created: "2021-03-23T09:13:11.878951107-07:00"
+    created: "2021-04-12T13:48:54.624094444-07:00"
     description: The triton client chart
     digest: bb01792460178be910934ab4992a2e2caf9e08600e6bf2038dacdd94469f5110
     name: triton
@@ -1645,7 +1740,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: 0.8.2
-    created: "2021-03-23T09:13:11.878355491-07:00"
+    created: "2021-04-12T13:48:54.62372283-07:00"
     description: The triton client chart
     digest: 624221e20e86a795fbc3fa7e05eaba370fcee774de9fefb43507a9128cbc9fce
     name: triton
@@ -1655,7 +1750,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2021-03-23T09:13:11.876250769-07:00"
+    created: "2021-04-12T13:48:54.62256117-07:00"
     description: The triton client chart
     digest: 7cefdb7918519c2a9c51ab9a523073975aad0e377e38dcb54699007d9f15223a
     name: triton
@@ -1665,7 +1760,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-23T09:13:11.875643134-07:00"
+    created: "2021-04-12T13:48:54.622186515-07:00"
     description: The triton client chart
     digest: b2a6d6ca1ba7c0bfb11c129bb6878fe392fc869bd8453e3c5b581003c6f9b001
     name: triton
@@ -1675,7 +1770,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2021-03-23T09:13:11.885024922-07:00"
+    created: "2021-04-12T13:48:54.629061764-07:00"
     description: The triton client chart
     digest: ae894ea3455e77916244b736911e641ce01e2538e1651bdf6e83f87085192332
     name: triton
@@ -1685,7 +1780,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2021-03-23T09:13:11.884505262-07:00"
+    created: "2021-04-12T13:48:54.628673296-07:00"
     description: The triton client chart
     digest: cff067253ddd24708a115772ad5c5cce82beceaf2e2ffc8f07f07ce1ac97ee71
     name: triton
@@ -1695,7 +1790,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-03-23T09:13:11.875065628-07:00"
+    created: "2021-04-12T13:48:54.621744158-07:00"
     description: The triton client chart
     digest: 1257ad6015f69429b34887f3aa02a0bfca2ed64fc90ed3fbdd54df24ba3ed459
     name: triton
@@ -1705,7 +1800,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.4.2
-    created: "2021-03-23T09:13:11.883971963-07:00"
+    created: "2021-04-12T13:48:54.628309774-07:00"
     description: The triton client chart
     digest: 83bd4ca42f005056f4135a9d2a967e324e3061050493de497b263445d5f03488
     name: triton
@@ -1715,7 +1810,7 @@ entries:
     version: v0.4.2
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2021-03-23T09:13:11.88343909-07:00"
+    created: "2021-04-12T13:48:54.627904853-07:00"
     description: The triton client chart
     digest: 84ddf8d96471c320beea36b8c5b8f64a6a53bca99ec61b32eaf850e73399b7da
     name: triton
@@ -1725,7 +1820,7 @@ entries:
     version: v0.4.1
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2021-03-23T09:13:11.882908273-07:00"
+    created: "2021-04-12T13:48:54.627537619-07:00"
     description: The triton client chart
     digest: 845bb95623814fe79d61a8ca7c39fa497c437f7fb2d0ce4589cbfdfccb861256
     name: triton
@@ -1735,7 +1830,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2021-03-23T09:13:11.874565001-07:00"
+    created: "2021-04-12T13:48:54.621297505-07:00"
     description: The triton client chart
     digest: f853bd0842d6dca29e53bcba8e5b567f55e467aa9a40001fa0f15c31eef9e411
     name: triton
@@ -1745,7 +1840,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-03-23T09:13:11.874199659-07:00"
+    created: "2021-04-12T13:48:54.620930335-07:00"
     description: The triton client chart
     digest: 3c7cdda8f9bffa1265e8c49bd8f7b3a317c29cd6a93a778b5a908abbb26d6abb
     name: triton
@@ -1755,7 +1850,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-03-23T09:13:11.873850122-07:00"
+    created: "2021-04-12T13:48:54.620568544-07:00"
     description: The triton client chart
     digest: e8ace76a0429e6df1a734aa3cb5752d45e0c63803c3a4b1e595d385b6f39722d
     name: triton
@@ -1763,4 +1858,4 @@ entries:
     urls:
     - charts/triton-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-23T09:13:11.72835785-07:00"
+generated: "2021-04-12T13:48:54.453066671-07:00"
